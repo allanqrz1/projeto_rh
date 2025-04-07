@@ -5,7 +5,7 @@ from ui.imagens import carregar_logo
 from ui.estilo import aplicar_tema
 
 def iniciar_app():
-    ctk.set_appearance_mode("light")
+    ctk.set_appearance_mode("dark")
     ctk.set_default_color_theme("dark-blue")
 
     app = ctk.CTk()

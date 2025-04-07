@@ -5,4 +5,4 @@ from .frames import criar_frames
 
 def aplicar_tema(app):
     # Aqui você pode futuramente adicionar temas personalizados
-    app._set_appearance_mode("light")
+    app._set_appearance_mode("dark")
