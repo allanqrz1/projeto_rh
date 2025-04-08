@@ -7,7 +7,7 @@ def carregar_logo():
     img_path = "logo.png"
     if os.path.exists(img_path):
         image = Image.open(img_path)
-        return ctk.CTkImage(light_image=image, dark_image=image, size=(120, 120))
+        return ctk.CTkImage(light_image=image, dark_image=image, size=(80, 80))
     return None
 
 def carregar_icone(caminho, tamanho):
