@@ -1,6 +1,6 @@
 # 2. Módulo de interface (ui/app.py)
 import customtkinter as ctk
-from ui.frames import criar_frames
+from ui.frames import criar_frames, adicionar_botao_home
 from ui.imagens import carregar_logo
 from ui.estilo import aplicar_tema
 
@@ -15,7 +15,8 @@ def iniciar_app():
     aplicar_tema(app)
 
     # Criar e empacotar os frames principais
-    frameTop, frameTabs, frameFooter, frameLeft = criar_frames(app)
+    frameTop, frameLeft,frameTabs, frameFooter = criar_frames(app)
+    adicionar_botao_home(frameLeft)
 
     # Logo no topo
     logo = carregar_logo()
